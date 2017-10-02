@@ -1,0 +1,5 @@
+django
+djangorestframework
+pytest
+django-cors-headers
+django-webpack-loader
