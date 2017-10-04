@@ -33,3 +33,4 @@ def get_user_info(request):
 #         print('test amy META:', request.META)
 #         print('test amy META[USER]:', request.META['USER'])
 #         return self.list(request, *args, **kwargs)
+
