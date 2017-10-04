@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="aside">
+        <p class="modal-header"> Search Messages</p>
+        <button class="btn btn-default btn-sm" href="#" (click)="searchAll()"><i class="fa fa-search"></i> Search All</button>
+        &nbsp;
+        <div class="input-group margin-bottom-sm">
+            <input class="form-control" type="text" placeholder="Referrence Number" id="referenceNo"
+                   minlength="5" name="referenceNo" [(ngModel)]="messages.referenceNumber" #name="ngModel">
+            <span class="input-group-addon" (click)="searchReference(messages)"><i class="fa fa-search fa-fw"></i></span>
+            <div *ngIf="referenceNo?.invalid && (referenceNo?.dirty || referenceNo?.touched)" class="alert alert-danger">
+                <div *ngIf="referenceNo?.errors.minLength"> Minimum Length 5</div>
+            </div>
+        </div>
+        &nbsp;
+        <div class="input-group margin-bottom-sm">
+            <input class="form-control" type="text" placeholder="Customer Number" name="customerNo"
+                   [(ngModel)]="messages.customerNumber" #name="ngModel">
+            <span class="input-group-addon" (click)="searchCustomer(messages)"><i class="fa fa-search fa-fw"></i></span>
+        </div>
+        &nbsp;
+    </div>
+</div>
+

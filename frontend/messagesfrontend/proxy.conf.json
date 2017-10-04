@@ -1,0 +1,10 @@
+{
+  "/messages":{
+    "target" : "http://localhost:8000",
+    "secure" : false
+  },
+  "/messages/userid":{
+    "target" : "http://localhost:8000",
+    "secure" : false
+  }
+}

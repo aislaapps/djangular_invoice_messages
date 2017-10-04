@@ -7,9 +7,13 @@ Author: aislaapps
 
 ## Requirements
 Python
+
 Virtualenv
+
 Pip
+
 Node.js
+
 NPM
 
 ## Setting Up Django DRF Backend
